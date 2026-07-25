@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book An Appointment | Elite Moments with Brenda</title>
+  <meta name="description" content="Request a private meeting with Brenda. Discreet, secure booking for your luxury companionship experience.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+    <style>
+    .booking-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      font-size: 0.938rem;
+    }
+    .form-control {
+      width: 100%;
+      padding: 0.875rem;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      border-color: var(--gold-primary);
+      color: var(--text-main);
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--gold-primary);
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Elite Moments with Brenda</a>
+      
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="booking.html" class="btn btn-primary">Book Private Time</a>
+      </div>
+
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Experiences</a>
+      <a href="booking.html">Book Private Time</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </aside>
+
+  <main>
+    <section class="container">
+      <div class="section-header">
+        <h2>Book An Appointment</h2>
+        <p>Complete the form below to request a discreet meeting with Brenda. All inquiries are handled with complete confidentiality.</p>
+      </div>
+
+      <div class="booking-wrapper">
+        <form id="bookingForm">
+          <div class="form-group">
+            <label for="experience">Select Service</label>
+            <select id="experience" class="form-control" required>
+              <option value="">Choose experience...</option>
+              <option value="gfe">Girlfriend Experience (1 Hour - €400)</option>
+              <option value="dinner">Dinner &amp; Evening Date (2 Hours - €750)</option>
+              <option value="overnight">Overnight Indulgence (12+ Hours - €2,500)</option>
+              <option value="extended">Extended Date (4+ Hours - €1,400)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Appointment Date</label>
+            <input type="date" id="date" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="time">Select Time</label>
+            <input type="time" id="time" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" class="form-control" placeholder="John Smith" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" class="form-control" placeholder="(555) 000-0000" required>
+          </div>
+
+          <div class="form-group">
+            <label for="location">Preferred Location</label>
+            <select id="location" class="form-control" required>
+              <option value="incall">Incall (My Discreet Location)</option>
+              <option value="outcall">Outcall (Your Hotel / Residence)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Special Requests or Notes (Optional)</label>
+            <textarea id="message" class="form-control" rows="4" placeholder="Any preferences, fantasies, or details you'd like to share..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Booking Request</button>
+          
+          <p style="text-align: center; font-size: 0.875rem; color: var(--text-muted); margin-top: 1.5rem;">
+            Your information is handled with strict confidentiality. A confirmation will be sent shortly after screening.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4 style="font-family: var(--font-heading); color: var(--gold-light);">Elite Moments with Brenda</h4>
+        <p>Exclusive luxury companionship for the discerning gentleman. Passion, elegance, and unforgettable private encounters.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Brenda</a>
+        <a href="services.html">Experiences</a>
+        <a href="booking.html">Book Private Time</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Experiences</h4>
+        <a href="services.html">Girlfriend Experience</a>
+        <a href="services.html">Dinner Dates</a>
+        <a href="services.html">Overnight Escapes</a>
+        <a href="services.html">Extended Travel</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>Phone: +1 (555) 382-9011</p>
+        <p>Email: brendmcpherson@gmail.com</p>
+        <p>Available by appointment only</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Elite Moments with Brenda. All rights reserved. For adults 18+ only. Discretion assured.</p>
+    </div>
+  </footer>
+
+  <!-- Global Scripts -->
+<script type="module" src="main.js"></script>
+
+</body>
+</html>
